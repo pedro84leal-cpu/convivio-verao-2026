@@ -1,0 +1,60 @@
+.wrapper {
+    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.container {
+
+  position: relative;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: box-shadow 0.5s ease;
+}
+
+.container.glow {
+  box-shadow: 0 0 30px 8px var(--cor), 0 0 60px 15px color-mix(in srgb, var(--cor) 40%, transparent);
+}
+
+.arco {
+  transition: stroke-dashoffset 0.05s linear;
+}
+
+.centro {
+
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.icone {
+
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.numero {
+
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.label {
+
+  font-size: 0.7rem;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
